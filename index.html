@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+<meta 
+    charset="UTF-8">
+<meta 
+    name="viewport" content="width=device-width, initial-scale=1.0">
+<link 
+    href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
+<link 
+    rel="stylesheet" 
+    href="./styles.css">
+<link 
+    rel="stylesheet" 
+    href="./Assets/swiper-bundle.min.css">
+<link 
+    rel="preconnect" 
+    href="https://fonts.googleapis.com">
+<link 
+    rel="preconnect" 
+    href="https://fonts.gstatic.com" crossorigin>
+<link 
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+
+<title>Meu Portifolio</title>
+
+</head>
+<body>
+    <!-- ================== Cabeçalho ================== -->
+    <!-- Seção para o cabeçalho do site -->
+    <header class="header" id="header" >
+        <nav class="nav container">
+            <a href="#" class="nav_logo"> Meu Portifolio</a>
+
+           <div class="nav_menu">
+               <ul class="nav_list">
+                   <li class="nav_item">
+                        <a href="#home" class="nav_link active-link"> 
+                            <i class='bx bx-home-alt '></i>
+                        </a>
+                    </li>
+                   <li class="nav_item">
+                        <a href="#sobre" class="nav_link"> 
+                            <i class='bx bx-user' ></i>
+                        </a>
+                    </li>
+                   <li class="nav_item">
+                        <a href="#skills" class="nav_link"> 
+                            <i class='bx bx-code-block' ></i>
+                        </a>
+                    </li>
+                   <li class="nav_item">
+                        <a href="#trabalho" class="nav_link"> 
+                            <i class='bx bxs-briefcase-alt-2' ></i>
+                        </a>
+                    </li>
+                   <li class="nav_item">
+                        <a href="#contato" class="nav_link"> 
+                            <i class='bx bx-message-square-detail' ></i>
+                        </a>
+                    </li>
+               </ul>
+           </div>
+<!-- ================== Botão Alterar Tema da Página (Dark/Light) ================== -->
+            <input  class="change-theme" type="checkbox" id="theme-button"/> 
+            <label class="label "for="theme-button">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+            </label>
+
+    </nav>
+    </header>
+
+    <!-- ================== Principal ================== -->
+    <!-- Seção principal do conteúdo -->
+    <main class="main">
+
+    <!-- Seção de Introdução -->
+    <section  id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+                    <span class="home_greeting">Olá, eu sou</span>
+                    <h1 class="home_name">Marcos Vinicius</h1>
+                    <h3 class="home_education"> <span id="auto_text"></span></h3>
+
+                    <div class="home_buttons">
+                        <a download="" href="Assets/CV.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+                        <a href="#sobre" class="button">Sobre mim</a>
+                    </div>
+                </div>
+                <div class="home_handle">
+                    <img src="Assets/hi.png" alt="Meu Memoji" class="home_img">
+                </div>
+                <div class="home_social">
+                    <a href="" target="_blank" class="home_social-link">
+                        <i class='bx bxl-linkedin-square' ></i>
+                    </a>
+                    <a href="" target="_blank" class="home_social-link">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+                    <a href="" target="_blank" class="home_social-link">
+                        <i class='bx bxl-instagram-alt' ></i>
+                    </a>
+                </div>
+                <a href="#sobre" class="home_scroll">
+                    <i class='bx bx-mouse' home_scroll-icon ></i>
+                    <span class="home_scroll-name"> Scroll Down</span>
+                </a>
+            </div>
+    </section>
+
+    <!-- Seção de Sobre -->
+    <section class="sobre section" id="sobre">
+            <span class="section_subtitle">Minha Introdução</span>
+            <h2 class="section_title">Sobre mim
+            </h2>
+            <div class="sobre_container container grid sc">
+                <img src="./Assets/develooper.png" alt="" class="sobre_img">
+                
+                <div class="sobre_data">
+                    
+                    <div class="sobre_info">
+                        <div class="sobre_box">
+                            <i class='bx bxs-extension sobre_icon' ></i>
+                            <h3 class="sobre_title">Versátil</h3>
+                            <span class="sobre_subtitle"> Seja Mobile ou Web </span>
+                        </div>
+                        <div class="sobre_box">
+                            <i class='bx bxs-timer sobre_icon'></i>                            
+                            <h3 class="sobre_title">Proativo</h3>
+                            <span class="sobre_subtitle"> Entrega Rápida</span>
+                        </div>
+                        <div class="sobre_box">
+                            <i class='bx bxs-brain sobre_icon' ></i>
+                            <h3 class="sobre_title">Inovador</h3>
+                            <span class="sobre_subtitle"> Soluções Criativas
+                            </span>
+                        </div>
+                    </div>
+
+                        <p class="sobre_descricao">
+                            Sou um profissional dedicado e entusiasta em busca de uma transição de carreira para a área de tecnologia, com foco específico no desenvolvimento iOS usando a linguagem Swift.
+                        </p>
+                        <a href="#contact" class="button button-sobre">Me contrate</a>
+                </div>    
+            </div>           
+       
+    </section>
+
+    <!-- Seção de Skills -->
+    <section class="skills section" id="skills">
+            <span class="section_subtitle">Minhas Skills</span>
+            <h2 class="section_title">Tecnologias que trabalho</h2>
+
+            <div class="skills_container container grid"> 
+                <div class="skills_content">
+                    <h3 class="skills_title">Frontend & Mobile Developer</h3>
+                    <div class="skills_box">
+                        <div class="skills_group">
+                            <div class="skills_data">
+                                <i class="fa-brands fa-swift sw ico"></i>                                <div> 
+                                    <h3 class="skills_name">Swift</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class="fa-brands fa-square-js js ico"></i>
+                                <div> 
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class="fa-brands fa-react ico rc"></i>                                <div> 
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills_group">
+                            <div class="skills_data">
+                                <i class='bx bxl-typescript ico tsr'></i>                                <div> 
+                                    <h3 class="skills_name">TypeScript</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class="fa-solid fa-n ico"></i>                                <div> 
+                                    <h3 class="skills_name">Next</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class="fa-brands fa-git-alt ico"></i>                                <div> 
+                                    <h3 class="skills_name">GIT & GitHub</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills_content">
+                    <h3 class="skills_title">Backend Developer</h3>
+                    <div class="skills_box">
+                        <div class="skills_group">
+                            <div class="skills_data">
+                                <i class='bx bxl-firebase ico fb' ></i>                                <div> 
+                                    <h3 class="skills_name">Firebase</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class='bx bxs-data ico' ></i>                                <div> 
+                                    <h3 class="skills_name">CoreData</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class="fa-brands fa-node-js ico njs"></i>                                <div> 
+                                    <h3 class="skills_name">Node JS</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills_group">
+                            <div class="skills_data">
+                                <i class='bx bx-code-alt ico' ></i>                                <div> 
+                                    <h3 class="skills_name">Express JS</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                    <i class='bx bxs-data ico ' ></i>                                <div> 
+                                    <h3 class="skills_name">SQL Lite</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <i class='bx bxl-mongodb ico njs' ></i>
+                                <div> 
+                                    <h3 class="skills_name">MongoDB</h3>
+                                    <span class="skills_level">Intermediário</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        <!-- Seção de Serviços -->
+        <div class="services section">
+            <span class="section_subtitle">Meus Trabalhos</span>
+            <h2 class="section_title servtitle">O que eu posso oferecer</h2>
+
+            <div class="services_container container grid">
+                <div class="services_card">
+                    <h3 class="services_title">Aplicativos Mobile (IOS)</h3>
+
+                    <span class="services_button">
+                        Veja mais <i class='bx bxs-right-arrow-square services_icon'></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class='bx bx-window-close services_modal-close' ></i> 
+                            <h3 class="services_modal-title">Aplicativos Mobile (IOS)</h3>
+                            <p class="services_modal-description">
+                                Ofereço serviços de criação de aplicativos para iOS, desenvolvendo 
+                                soluções personalizadas e intuitivas para atender às necessidades 
+                                dos usuários e empresas. Com foco em design moderno e funcionalidades 
+                                eficientes, entrego aplicativos de alta qualidade que proporcionam uma 
+                                excelente experiência no ecossistema Apple.
+                            </p>
+                            <ul class="services_modal-list">
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Desenvolvo sua aplicação:</strong> Transformo suas ideias em aplicativos 
+                                        funcionais para iOS.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Design intuitivo:</strong> Crio interfaces que são fáceis de usar e 
+                                        visualmente atraentes.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Funcionalidades personalizadas:</strong> Adiciono as funcionalidades 
+                                        específicas que você precisa.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Publicação na App Store:</strong> Cuido do processo de submissão e 
+                                        lançamento do seu aplicativo.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Manutenção contínua:</strong> Ofereço suporte e atualizações para garantir 
+                                        que seu aplicativo continue funcionando perfeitamente.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_card">
+                    <h3 class="services_title">E-Comerce e Lojas Online</h3>
+
+                    <span class="services_button">
+                        Veja mais <i class='bx bxs-right-arrow-square services_icon'></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class='bx bx-window-close services_modal-close' ></i>
+
+                            <h3 class="services_modal-title">Criação de E-Comerce</h3>
+                            <p class="services_modal-description">
+                                <strong> Desenvolvimento de e-commerce:</strong>  Construo a sua loja 100% online e segura.
+
+                            </p>
+                            <ul class="services_modal-list">
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Design responsivo:</strong> Crio um site que se adapta a todos os dispositivos.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Gestão de produtos</strong> Organizo e mostro seus produtos através de um design 
+                                        intuitivo e interface agradável.
+
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Funcionalidades personalizadas:</strong> Adiciono as funcionalidades 
+                                        específicas que você precisa.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Suporte técnico: </strong> Ajudo a manter sua loja funcionando.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services_card">
+                    <h3 class="services_title">Web Sites e Landing Pages</h3>
+
+                    <span class="services_button">
+                        Veja mais <i class='bx bxs-right-arrow-square services_icon'></i>
+                    </span>
+
+                    <div class="services_modal">
+                        <div class="services_modal-content">
+                            <i class='bx bx-window-close services_modal-close' ></i>                            
+                            <h3 class="services_modal-title">Desenvolvimento de Websites Diversos e Landing Pages
+
+                            </h3>
+                            <p class="services_modal-description">
+                                Ofereço serviços especializados no desenvolvimento de websites diversos e landing 
+                                pages, criando soluções digitais que destacam sua marca e atraem seu público-alvo. 
+                                Combinando design moderno e funcionalidades avançadas, meu objetivo é proporcionar 
+                                uma experiência de usuário excepcional e resultados eficazes para o seu negócio.
+
+
+                            </p>
+                            <ul class="services_modal-list">
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Websites Personalizados:</strong> Desenvolvo websites sob medida para atender às necessidades específicas do seu negócio.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Landing Pages Otimizadas:</strong> Crio landing pages otimizadas para conversão, focadas em capturar leads e promover seus produtos ou serviços.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Design Responsivo:</strong> Garanto que seu site seja completamente responsivo, funcionando perfeitamente em todos os dispositivos e tamanhos de tela.
+                                    </p>
+                                </li>
+                                <li class="services_modal-item">
+                                    <i class='bx bxs-check-shield services_modal-icon'></i>
+                                    <p class="services_modal-info">
+                                        <strong>Integração de Tecnologias Modernas:</strong> Implemento as últimas tecnologias web para melhorar o desempenho e a segurança do seu site.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Trabalhos -->
+    <section class="trabalho section ts" id="trabalho">
+            <span class="section_subtitle">Meu Portifolio</span>
+            <h2 class="section_title">Trabalhos recentes</h2>
+            
+            <div class="work_filters">
+                <span class="work_item active-work" data-filter='all'>All</span>
+                <span class="work_item" data-filter='.website'>WebSite</span>
+                <span class="work_item" data-filter='.pages'>Pages</span>
+                <span class="work_item" data-filter='.mobile'>Mobile</span>
+            </div>
+            <div class="work_container container grid wg">
+                <div class="work_card mix pages">
+                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
+                    <h3 class="work_title">WebSite</h3>
+                    <a href="#" class="work_button">
+                        Ver Projeto<i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+                <div class="work_card mix website">
+                    <img src="./Assets/ProjectSquareII.png" class="work_img" alt="">
+                    <h3 class="work_title">WebSite</h3>
+                    <a href="#" class="work_button">
+                        Ver Projeto<i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+                <div class="work_card mix website">
+                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
+                    <h3 class="work_title">WebSite</h3>
+                    <a href="#" class="work_button">
+                        Ver Projeto<i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+                <div class="work_card mix website">
+                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
+                    <h3 class="work_title">WebSite</h3>
+                    <a href="#" class="work_button">
+                        Ver Projeto<i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+                <div class="work_card mix mobile">
+                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
+                    <h3 class="work_title">WebSite</h3>
+                    <a href="#" class="work_button">
+                        Ver Projeto<i class='bx bxs-right-arrow-square work_icon'></i>
+                    </a>
+                </div>
+      
+            </div>
+
+        <!-- Seção de Testemunhos -->
+        <div class="testemunhos section">
+            <spam class="section_subtitle"> O que meus clientes dizem</spam>
+            <h2 class="section_title">Testemunhos</h2>
+        <div class="testemunhos_container container swiper">
+        <div class="swiper-wrapper">
+            <div class="testemunhos_card swiper-slide">
+                <img src="./Assets/testemunha1.jpeg" alt="" class="testemunha_img">
+                <h3 class="testemunha_nome">Sonia Santana</h3>
+                <p class="testemunha_descricao">
+                    "Nossa landing page ficou incrível graças ao trabalho do Marcos. 
+                    Ele entendeu nossas necessidades e entregou uma página bonita e 
+                    convidativa que já está trazendo ótimos resultados."
+                </p>
+            </div>
+            <div class="testemunhos_card swiper-slide">
+                <img src="./Assets/testemunha2.jpeg" alt="" class="testemunha_img">
+                <h3 class="testemunha_nome">Pessoa Aleatória</h3>
+                <p class="testemunha_descricao">
+                    "O site de e-commerce que o Marcos criou para nós é fantástico! 
+                    O design é lindo, a navegação é fácil e as integrações de pagamento 
+                    funcionam perfeitamente. Recomendo muito seus serviços!"
+                </p>
+            </div>
+            <div class="testemunhos_card swiper-slide">
+                <img src="./Assets/testemunha3.jpeg" alt="" class="testemunha_img">
+                <h3 class="testemunha_nome">Antonio Marcos</h3>
+                <p class="testemunha_descricao">
+                    "Trabalhar com o Marcos foi incrível! Ele desenvolveu nosso Software com perfeição, 
+                    entregando exatamente o que precisávamos. O resultado final superou nossas expectativas!"
+                </p>
+            </div>
+        </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contato section" id="contato">
+            <span class="section_subtitle">Dê um toque</span>
+            <h2 class="section_title">Entre em Contato</h2>
+            <div class="contato_container container grid">
+                <div class="contato_content">
+                    <h3 class="contato_title">Fale comigo</h3>
+
+                    <div class="contato_info">
+                        <div class="contato_card">
+                            <i class='bx bxl-whatsapp contato_card-icon' ></i>
+                            <h3 class="contato_card-title">WhatsApp</h3>
+                            <span class="contato_card-dados">(11) 99300-5062</span>
+                            <a href="https://api.whatsapp.com/send?phone=5511993005062&text=Olá, vi o seu Portifolio!" target="_blank" class="contato_button" >
+                                Clique para ir <i class='bx bxs-right-arrow-square contato_button-icon' ></i>
+                            </a>
+                        </div>
+                        <div class="contato_card" onclick="copyEmail()">
+                            <i class='bx bx-mail-send contato_card-icon'></i>
+                            <h3 class="contato_card-title">E-Mail</h3>
+                            <span class="contato_card-dados">marcosv.dev@outlook.com</span>
+                            <a href=""class="contato_button" >
+                                Clique para copiar e-mail<i class='bx bxs-copy-alt contato_button-icon' ></i>
+                            </a>
+                        </div>
+                        <div class="contato_card">
+                            <i class='bx bxl-github contato_card-icon' ></i>
+                            <h3 class="contato_card-title">GitHub</h3>
+                            <span class="contato_card-dados">MarcosSantos-1</span>
+                            <a href="https://github.com/MarcosSantos-1" target="_blank" class="contato_button" >
+                                Clique para ir <i class='bx bxs-right-arrow-square contato_button-icon' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contato_content">
+                    <h3 class="contato_title">Escreva o seu projeto</h3>
+                    <form action="" class="contato_form">
+                        <div class="contato_form-div">
+                            <label for="" class="contato_form-tag" >Nome:</label>
+                            <input type="text" class="contato_form-input"  placeholder="Insira seu nome" name="">
+                        </div>
+                        <div class="contato_form-div">
+                            <label for="" class="contato_form-tag" >E-mail:</label>
+                            <input type="text" class="contato_form-input"  placeholder="Insira seu e-mail"name="">
+                        </div>
+                        <div class="contato_form-div contato_form-area">
+                            <label for="" class="contato_form-tag" >Mensagem / Projeto:</label>
+                            <textarea name="" id="" cols="30" rows="10" class="contato_form-input" placeholder="Escreva sua mensagem / projeto" ></textarea>
+                        </div>
+
+                        <button type="submit" class="button">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+    </main>
+
+    <!-- ================== Rodapé ================== -->
+    <!-- Seção para o rodapé do site -->
+    <footer class="footer" >
+        <div class="footer_container container">
+            <h1 class="footer_title">Marcos Vinicius</h1>
+            <ul class="footer_list">
+                <li>
+                    <a href="#sobre" class="footer_link">Sobre</a>
+                </li>
+                <li>
+                    <a href="#skills" class="footer_link">Skills</a>
+                </li>
+                <li>
+                    <a href="#trabalho" class="footer_link">Trabalhos</a>
+                </li>
+            </ul>
+            <ul class="footer_social">
+                <a href="https://www.facebook.com/marcosvinicius.silvadossantos.7/" target="_blank" class="footer_social-link">
+                    <i class='bx bxl-facebook' ></i>
+                </a>
+                <a href="https://www.instagram.com/marcos_vinisilva2/" target="_blank" class="footer_social-link">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://twitter.com/MarcosV03831347" target="_blank" class="footer_social-link">
+                    <i class='bx bxl-twitter' ></i>                
+                </a>
+            </ul>
+            <span class="footer_copy">
+                <p>&copy; 2024 Marcos Vinicius. Todos os direitos reservados.</p>
+            </span>
+        </div>
+    </footer>
+
+
+    <!-- ================== Scripts ================== -->
+
+    <!-- Seção para adicionar scripts JavaScript -->
+          
+    <!-- --- ANIMAÇÃO DE TYPING (DIGITAR) --- -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- --- SCROLL REVEAL --- -->
+    <script src="./Assets/scrollreveal.min.js"></script>
+
+    <!-- --- FONTS AWESOME --- -->
+    <script src="https://kit.fontawesome.com/6ebf6e83cd.js" crossorigin="anonymous"></script>
+
+    <!-- --- MIXTUP FILTER --- -->
+    <script src="./Assets/swiper-bundle.min.js"></script>
+
+    <!-- --- MIXTUP FILTER --- -->
+    <script src="./Assets/mixitup.min.js"></script>
+
+    <!-- --- Main JS --- -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
