@@ -21,7 +21,8 @@
     --second-hue: 8;
     --sat: 100%;
     --lig: 41%;
-
+    /* color: #FF7AB2;
+       color: #DABAFF; */
     
     --first-color: hsl(var(--first-hue), var(--sat),var(--lig));
     --first-color-alt: hsl(var(--first-hue), var(--sat),71%);
@@ -482,6 +483,15 @@ body.light-theme{
     .button--ghost{
         background-color: transparent;
         border: 2px solid var(--first-color);
+        color: var(--first-color);
+    }
+    .button--ghost o {
+        background-color: transparent;
+        
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         color: var(--first-color);
     }
 /*-- -->ABOUT   --*/
