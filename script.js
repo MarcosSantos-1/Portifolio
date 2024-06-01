@@ -8,8 +8,8 @@ window.addEventListener('scroll', scrollHeader)
 
 
 /*Typing Animation */
-var typed = new Typed('#auto_text', {
-    strings: ['> Desenvolvedor iOS', '> Desenvolvedor Fullstack'],
+let typed = new Typed('#auto_text', {
+    strings: ['> Desenvolvedor iOS', '> Desenvolvedor Fullstack','> Desenvolvedor React', '> Desenvolvedor Node JS'],
     typeSpeed: 65,
     backSpeed: 50,
     backDelay : 4500,
@@ -79,10 +79,31 @@ let swiperTestemunhos = new Swiper(".testemunhos_container", {
   });
 
   //==== COPIAR O E-MAIL =====
+
+
+
+
+
   function copyEmail(){
-    alert("E-mail copiado!")
     navigator.clipboard.writeText("marcosv.dev@outlook.com");
-  }
+
+      Toastify({  
+      avatar:"./Assets/tks.png",
+      text: "E-mail copiado!",
+      duration: 3000,
+      close: true,
+      gravity: "bottom", // `top` or `bottom`
+      position: "left", // `left`, `center` or `right`
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+      style: {
+        background: "linear-gradient(to top, #1A1A1D, #131315)",
+      },
+  }).showToast();
+
+      }
+
+
+  
 
 
   /*SCROLL e NAV */
