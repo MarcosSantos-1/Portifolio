@@ -326,7 +326,6 @@ body.light-theme{
     position: relative;
     row-gap: 2rem;
     padding-top: 5.5rem;
-    
 }
 .home_data{
     text-align: center;
@@ -404,6 +403,7 @@ body.light-theme{
     left: 0;
     display: grid;
     row-gap: 1rem;
+    
 }
 .home_social-link{
     width: max-content;
@@ -454,6 +454,7 @@ body.light-theme{
 .sobre_container{
     row-gap: 2.5rem;
 }
+
 .sobre_img{
     width: 220px;
     border-radius: 1.5rem;
@@ -485,10 +486,13 @@ body.light-theme{
 }
 .sobre_subtitle{
     font-size: var(--tiny-font-size);
+
 }
 .sobre_descricao{
     margin-bottom: 1rem;
+    text-align: justify;
 }
+
 .button-sobre{
     display: flex;
     justify-content: center;
@@ -708,7 +712,7 @@ body.light-theme{
     width: 100%;
     margin: 5px;
     gap: .5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     padding-right:  1.5rem;
     cursor: pointer;
     position: relative; /* Habilita o posicionamento do tooltip */
