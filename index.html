@@ -6,8 +6,15 @@
 <meta 
     name="viewport" content="width=device-width, initial-scale=1.0">
 <link 
+    rel="shortcut icon" 
+    type="image/ico" 
+    href="./assets/develooper.png">
+<link 
     href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
     rel='stylesheet'>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
 <link 
     rel="stylesheet" 
     href="./styles.css">
@@ -93,7 +100,7 @@
 
                     <div class="home_buttons">
                         <a download="" href="Assets/CV.pdf" class="button button--ghost">
-                            <i class='bx bxs-file-pdf'></i>  Download CV
+                            <i class='bx bxs-archive-out cv-icon' ></i>  Ver Currículo
                         </a>
                         <a href="#sobre" class="button">Sobre mim</a>
                     </div>
@@ -112,10 +119,6 @@
                         <i class='bx bxl-instagram-alt' ></i>
                     </a>
                 </div>
-                <a href="#sobre" class="home_scroll">
-                    <i class='bx bx-mouse' home_scroll-icon ></i>
-                    <span class="home_scroll-name"> Scroll Down</span>
-                </a>
             </div>
     </section>
 
@@ -159,7 +162,7 @@
                             Se você está procurando por um desenvolvedor dedicado e talentoso, seja para projetos freelance ou para uma contratação futura, vamos conversar!
                             <br>
                             <br>
-                            <strong> Vamos juntos transformar suas ideias em realidade! </strong> 
+                            <strong> Vamos juntos transformar suas ideias em realidade! <br> #OpenToWork </strong> 
 
 
                         </p>
@@ -170,7 +173,7 @@
     </section>
 
     <!-- Seção de Skills -->
-    <section class="skills section" id="skills">
+    <section class="skills section " id="skills">
             <span class="section_subtitle">Minhas Skills</span>
             <h2 class="section_title">Tecnologias que trabalho</h2>
 
@@ -211,7 +214,7 @@
                                 </div>
                             </div>
                             <div class="skills_data">
-                                <i class="fa-solid fa-n ico"></i>                                
+                                <i class="ri-nextjs-fill ico"></i>                               
                                 <div> 
                                     <h3 class="skills_name">Next</h3>
                                     <span class="skills_level"> </span>
@@ -407,9 +410,8 @@
                     <div class="services_modal">
                         <div class="services_modal-content">
                             <i class='bx bx-window-close services_modal-close' ></i>                            
-                            <h3 class="services_modal-title">Desenvolvimento de Websites Diversos e Landing Pages
+                            <h3 class="services_modal-title">Desenvolvimento de Websites Diversos e Landing Pages</h3>
 
-                            </h3>
                             <p class="services_modal-description">
                                 Ofereço serviços especializados no desenvolvimento de websites diversos e landing 
                                 pages, criando soluções digitais que destacam sua marca e atraem seu público-alvo. 
@@ -466,13 +468,30 @@
             <div class="work_container container grid wg">
 
                 <div class="work_card mix sistema">
-                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
+                    <img src="./Assets/GeradordeOrcProjectSquare.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class="fa-brands fa-react ico rc" data-tech="React"></i>                                
+                        <i class="fa-brands fa-square-js js ico" data-tech="JavaScript"></i>
+                        <i class='bx bxl-typescript ico tsr' data-tech="TypeScript"></i>    
+                        <i class="ri-nextjs-fill ico" data-tech="NextJS"></i> 
+                        <i class="fa-brands fa-node-js ico njs" data-tech="NodeJS"></i> 
+                        <i class='bx bxl-mongodb ico njs'  data-tech="MongoDB"></i>
+
+                    </div>
                     <h3 class="work_title">Gerenciador de Ordens de Serviço</h3>
+                    <div class="work_description">
+                        <p>
+                            Desenvolvimento de um sistema web de Gerador de Ordens de Serviço, 
+                            permitindo a criação, acompanhamento e gestão de orçamentos de forma 
+                            eficiente, além do armazenamento seguro dos documentos e realteração 
+                            de forma prática.
+                        </p>
+                    </div>
                     <div class="work_buttons">
-                        <a href="https://charme-bela.vercel.app/" target="_blank" class="work_button">
+                        <a href="https://anfer-website.vercel.app/" target="_blank" class="work_button">
                             Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
                         </a>
-                        <a href="https://github.com/MarcosSantos-1/Charme-Bela_Website"  target="_blank" class="work_button">
+                        <a href="https://github.com/MarcosSantos-1/ANFER-Website"  target="_blank" class="work_button">
                             Repositório <i class='bx bxl-github work_icon'></i>
                         </a>
                     </div>
@@ -480,7 +499,21 @@
 
                 <div class="work_card mix website">
                     <img src="./Assets/ProjectSquareII.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class='bx bxl-html5 htm' data-tech="HTML" ></i>
+                        <i class='bx bxl-css3 cs' data-tech="CSS"  ></i>
+                        <i class='bx bxl-sass sass' data-tech="Sass"  ></i>
+                        <i class="fa-brands fa-square-js js ico" data-tech="JavaScript" ></i>
+
+                    </div>
                     <h3 class="work_title">ANFER Esquadrias - WebSite</h3>
+                    <div class="work_description">
+                        <p>
+                            Desenvolvimento de landing page para uma serralheria usando HTML, 
+                            CSS e JavaScript, apresentando serviços e portfólio com design 
+                            responsivo e visual atraente.
+                        </p>
+                    </div>
                     <div class="work_buttons">                    
                     <a href="https://anfer-website.vercel.app/" target="_blank" class="work_button">
                         Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
@@ -491,35 +524,50 @@
                    </div>
                 </div>
 
-                <div class="work_card mix website">
-                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
-                    <h3 class="work_title">Hamburgueria - WebSite</h3>
-                    <div class="work_buttons">                   
-                    <a href="https://charme-bela.vercel.app/" target="_blank" class="work_button">
-                        Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
-                    </a>
-                    <a href="https://github.com/MarcosSantos-1/Charme-Bela_Website"  target="_blank" class="work_button">
-                        Repositório <i class='bx bxl-github work_icon'></i>
-                    </a>
-                </div>
-                </div>
+                <div class="work_card mix sistema">
+                    <img src="./Assets/GestorAreaProjectSquare.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class='bx bxl-html5 htm' data-tech="HTML" ></i>
+                        <i class='bx bxl-css3 cs' data-tech="CSS"  ></i>
+                        <i class='bx bxl-sass sass' data-tech="Sass"  ></i>
+                        <i class="fa-brands fa-square-js js ico" data-tech="JavaScript" ></i>
 
-                <div class="work_card mix website">
-                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
-                    <h3 class="work_title">Relógios E-Commerce</h3>
-                    <div class="work_buttons">                    
-                    <a href="https://charme-bela.vercel.app/" target="_blank" class="work_button">
-                        Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
-                    </a>
-                    <a href="https://github.com/MarcosSantos-1/Charme-Bela_Website"  target="_blank" class="work_button">
-                        Repositório <i class='bx bxl-github work_icon'></i>
-                    </a>
-                </div>
+                    </div>
+                    <h3 class="work_title">Área do Gestor Charme & Bela - Sistema</h3>
+                    <div class="work_description">
+                        <p> 
+                            Desenvolvimento de um sistema web de gestão de clientes e administração do 
+                            app, com funcionalidades para monitorar agendamentos, gerenciar perfis de 
+                            clientes e analisar dados. O sistema é responsivo, seguro e integrado ao app, 
+                            facilitando a administração e a tomada de decisões.
+                                                    </p>
+                    </div>
+                    <div class="work_buttons">
+                        <a href="https://charme-bela.vercel.app/" target="_blank" class="work_button">
+                            Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
+                        </a>
+                        <a href="https://github.com/MarcosSantos-1/Charme-Bela_Website" target="_blank"  class="work_button">
+                            Repositório <i class='bx bxl-github  work_icon'></i>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="work_card mix mobile">
-                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
+                    <img src="./Assets/CharmeAppProjectSquare.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class="fa-brands fa-swift sw ico" data-tech="Swift" ></i>
+                        <i class='bx bxl-firebase ico fb'  data-tech="FireBase" ></i>                                                        
+                    </div>
                     <h3 class="work_title">Charme & Bela App</h3>
+                    <div class="work_description">
+                        <p>
+                            App para marcação de atendimentos e 
+                            procedimentos estéticos, utilizando Swift e Firebase. O app 
+                            permite agendamentos em tempo real, gerenciamento de clientes 
+                            e envio de notificações, proporcionando uma experiência prática e 
+                            eficiente para usuários e profissionais.
+                        </p>
+                    </div>
                     <div class="work_buttons">
                     <a href="https://charme-bela.vercel.app/" target="_blank" class="work_button">
                         Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
@@ -530,14 +578,82 @@
                 </div>
                 </div>
 
-                <div class="work_card mix mobile">
-                    <img src="./Assets/ProjectSquare.png" class="work_img" alt="">
-                    <h3 class="work_title">ULine App</h3>
-                    <div class="work_buttons">
-                    <a href="https://charme-bela.vercel.app/" target="_blank" class="work_button">
+                <div class="work_card mix website">
+                    <img src="./Assets/HammburgueriaProjectSquare.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class='bx bxl-html5 htm' data-tech="HTML" ></i>
+                        <i class='bx bxl-css3 cs'  data-tech="CSS" ></i>
+                        <i class='bx bxl-tailwind-css tlwind'  data-tech="Tailwind" ></i>
+                        <i class="fa-brands fa-square-js js ico" data-tech="JavaScript" ></i>
+                    </div>
+                    <h3 class="work_title">Hamburgueria - WebSite</h3>
+                    <div class="work_description">
+                        <p>
+                            Site para hamburgueria com cardápio interativo e 
+                            sistema de carrinho, permitindo redirecionamento para pedidos via WhatsApp. 
+                            Design moderno e responsivo, desenvolvido com Tailwind.
+                        </p>
+                    </div>
+                    <div class="work_buttons">                   
+                    <a href="https://hamburgueria-cardapio-eight.vercel.app/" target="_blank" class="work_button">
                         Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
                     </a>
-                    <a href="https://github.com/MarcosSantos-1/Charme-Bela_Website" target="_blank"  class="work_button">
+                    <a href="https://github.com/MarcosSantos-1/hamburgueria_cardapio"  target="_blank" class="work_button">
+                        Repositório <i class='bx bxl-github work_icon'></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="work_card mix website">
+                <img src="./Assets/RelogiosProjectSquare.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class="fa-brands fa-react ico rc" data-tech="React" ></i>                                
+                        <i class="fa-brands fa-square-js js ico" data-tech="JavaScript" ></i>
+                        <i class='bx bxl-typescript ico tsr' data-tech="TypeScript" ></i>    
+                        <i class="ri-nextjs-fill ico" data-tech="NextJS" ></i> 
+                        <i class="fa-brands fa-node-js ico njs" data-tech="NodeJS" ></i>                                                                                        
+                    </div>
+                    <h3 class="work_title">Relógios E-Commerce</h3>
+                    <div class="work_description">
+                        <p>
+                            Site e-commerce para relógios e perfumes 
+                            importados, utilizando tecnologias como React e Next.js no front-end, 
+                            e Express e Node.js no back-end além de outras. O site oferece uma experiência de compra fluida, 
+                            com catálogo interativo, sistema de carrinho, checkout seguro e integração 
+                            com métodos de pagamento modernos.
+                        </p>
+                    </div>
+                    <div class="work_buttons">                    
+                      <a href="https://hamburgueria-cardapio-eight.vercel.app/" target="_blank" class="work_button">
+                          Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
+                    </a>
+                    <a href="https://github.com/MarcosSantos-1/hamburgueria_cardapio"  target="_blank" class="work_button">
+                        Repositório <i class='bx bxl-github work_icon'></i>
+                    </a>
+                </div>
+                </div>
+
+
+                <div class="work_card mix mobile">
+                    <img src="./Assets/UlineProjectSquare.png" class="work_img" alt="">
+                    <div class="work_tech_logos">
+                        <i class="fa-brands fa-swift sw ico" data-tech="Swift" ></i>
+                        <i class='bx bxl-firebase ico fb'  data-tech="FireBase" ></i>          
+                    </div>
+                    <h3 class="work_title">ULine App</h3>
+                    <div class="work_description">
+                        <p>
+                            Desenvolvimento de um app de localização em tempo real para ônibus da SPTrans, 
+                            conectando-se à API da empresa. O app permite aos passageiros acompanhar a localização 
+                            exata dos ônibus, oferecendo uma experiência de navegação eficiente e atualizações em tempo 
+                            real sobre rotas e horários.
+                        </p>
+                    </div>
+                    <div class="work_buttons">
+                        <a href="https://hamburgueria-cardapio-eight.vercel.app/" target="_blank" class="work_button">
+                            Demo <i class="fa-solid fa-up-right-from-square work_icon"></i>
+                    </a>
+                    <a href="https://github.com/MarcosSantos-1/hamburgueria_cardapio"  target="_blank" class="work_button">
                         Repositório <i class='bx bxl-github  work_icon'></i>
                     </a>
                 </div>
@@ -622,20 +738,20 @@
                     <form action="https://formsubmit.co/marcosv.dev@outlook.com" method="POST" class="contato_form">
                         <div class="contato_form-div">
                             <label for="" class="contato_form-tag" >Nome:</label>
-                            <input type="text" class="contato_form-input"  placeholder="Insira seu nome" name="" required>
+                            <input type="text" class="contato_form-input"  placeholder="Insira seu nome" name="nome" required>
                         </div>
                         <div class="contato_form-div">
                             <label for="" class="contato_form-tag" >E-mail:</label>
-                            <input type="text" class="contato_form-input"  placeholder="Insira seu e-mail"name="" required>
+                            <input type="email" class="contato_form-input"  placeholder="Insira seu e-mail"name="email" required>
                         </div>
                         <div class="contato_form-div contato_form-area">
                             <label for="" class="contato_form-tag" >Mensagem / Projeto:</label>
-                            <textarea name="" id="" cols="30" rows="10" class="contato_form-input" placeholder="Escreva sua mensagem / projeto" required></textarea>
+                            <textarea name="message" id="" cols="30" rows="10" class="contato_form-input" placeholder="Escreva sua mensagem / projeto" required></textarea>
                         </div>
                         <div class="form-buttom">
                             <input type="hidden" name="_captcha" value="false">
                             <input type="hidden" name="_next" value="https://portifolio-iota-ochre.vercel.app/obrigado.html">
-                         <button type="submit" onclick="sended()"" class="button">Enviar Mensagem</button>
+                         <button type="submit" onclick="sended()" class="button">Enviar Mensagem</button>
                         </div>
                     </form>
                 </div>
